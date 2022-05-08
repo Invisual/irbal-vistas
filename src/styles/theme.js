@@ -5,12 +5,18 @@ export const theme = {
   spacingM: '6rem',
   spacingL: '9rem',
   spacingXL: '15rem',
-  fontFamily: '"Lexend", sans-serif',
+  fontFamily: '"Archivo", sans-serif',
   fontLight: 300,
   fontRegular: 400,
   fontMedium: 500,
   fontSemiBold: 600,
   fontBold: 700,
+  blue: '#193962',
+  orange: '#EB7C26',
+  white: '#FFFFFF',
+  offWhite: '#F4F4F4',
+  black: '#121212',
+  grey: '#5a5958',
 }
 
 const size = {

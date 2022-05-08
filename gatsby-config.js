@@ -39,5 +39,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: [`Archivo:300,400,500,600,700`],
+        },
+      },
+    },
   ],
 }
