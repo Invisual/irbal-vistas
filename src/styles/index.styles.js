@@ -18,12 +18,21 @@ const SearchContainer = styled.div`
     @media screen and (max-width: 1100px) {
       grid-template-columns: 1fr 1fr;
     }
+
+    @media screen and (max-width: 600px) {
+      gap: ${({ theme }) => theme.spacingM} 2rem;
+    }
+
+    @media screen and (max-width: 400px) {
+      grid-template-columns: 1fr;
+    }
   }
 `
 
 const Input = styled.input`
   width: 30rem;
   height: 5rem;
+  max-width: 90%;
   padding: ${({ theme }) => theme.spacingS};
   background: ${({ theme }) => theme.offWhite};
   color: ${({ theme }) => theme.black};

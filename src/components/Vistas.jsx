@@ -21,7 +21,11 @@ export const Vistas = ({ title, children }) => {
 
       const clientRect = e.target.getBoundingClientRect()
       setTitleY(clientRect.top)
-      setTitleX(clientRect.right)
+      setTitleX(
+        clientRect.right + 70 > window.innerWidth
+          ? clientRect.right - 70
+          : clientRect.right
+      )
 
       e.target.style.width = `${width * 1.5}px`
       e.target.style.height = `${height * 1.5}px`

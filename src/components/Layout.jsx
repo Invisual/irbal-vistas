@@ -18,8 +18,9 @@ const StyledLayout = styled.div`
   max-width: 1390px;
   margin: 0 auto;
   padding-top: ${({ theme }) => theme.spacingL};
+  padding: ${({ theme }) => theme.spacingL} 35px;
 
-  @media only screen and (min-width: 768px) {
-    padding: ${({ theme }) => theme.spacingL} 35px;
+  @media only screen and (max-width: 768px) {
+    padding: ${({ theme }) => theme.spacingL} 15px;
   }
 `

@@ -16,6 +16,11 @@ const Main = styled.main`
   .vista {
     position: relative;
     text-align: center;
+
+    svg {
+      max-width: 100%;
+      height: auto;
+    }
   }
 
   .vista #ECOMIX_130 {
@@ -43,10 +48,23 @@ const Main = styled.main`
     color: white;
     border-radius: 10px;
     font-size: 1.5rem;
+    line-height: 2.3rem;
     padding: 15px;
     animation: ${fadeIn} 0.5s;
     text-transform: capitalize;
     background-color: ${({ theme }) => theme.blue};
+  }
+
+  @media screen and (max-width: 550px) {
+    .vista {
+      margin-top: ${({ theme }) => theme.spacingS};
+    }
+
+    .title {
+      font-size: 1.2rem;
+      line-height: 1.9rem;
+      padding: 10px;
+    }
   }
 `
 
