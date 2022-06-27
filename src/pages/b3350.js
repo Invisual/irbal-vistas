@@ -2,17 +2,17 @@ import React from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import { Vistas } from '../components/Vistas'
-import { Ecomix130 } from '../components/models/Ecomix130'
+import { B3350 } from '../components/models/B3350'
 
-const Ecomix130Page = () => {
+const B3350Page = () => {
   return (
     <Layout>
       <SEO />
-      <Vistas title="Ecomix 130">
-        <Ecomix130 />
+      <Vistas title="B3 350">
+        <B3350 />
       </Vistas>
     </Layout>
   )
 }
 
-export default Ecomix130Page
+export default B3350Page

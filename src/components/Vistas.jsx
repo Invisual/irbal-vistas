@@ -10,7 +10,8 @@ export const Vistas = ({ title, children }) => {
   const handleMouseOver = (e) => {
     if (
       (e.target.tagName.toLowerCase() === 'use' ||
-        e.target.tagName.toLowerCase() === 'rect') &&
+        e.target.tagName.toLowerCase() === 'rect' ||
+        e.target.tagName.toLowerCase() === 'image') &&
       e.target.dataset.url
     ) {
       const title = e.target.dataset.name
@@ -22,8 +23,8 @@ export const Vistas = ({ title, children }) => {
       const clientRect = e.target.getBoundingClientRect()
       setTitleY(clientRect.top)
       setTitleX(
-        clientRect.right + 70 > window.innerWidth
-          ? clientRect.right - 70
+        clientRect.right + 150 > window.innerWidth
+          ? clientRect.right - 150
           : clientRect.right
       )
 
@@ -45,7 +46,8 @@ export const Vistas = ({ title, children }) => {
   const handleMouseLeave = (e) => {
     if (
       (e.target.tagName.toLowerCase() === 'use' ||
-        e.target.tagName.toLowerCase() === 'rect') &&
+        e.target.tagName.toLowerCase() === 'rect' ||
+        e.target.tagName.toLowerCase() === 'image') &&
       e.target.dataset.url
     ) {
       const id = e.target.id
@@ -64,11 +66,14 @@ export const Vistas = ({ title, children }) => {
   const handleClick = (e) => {
     if (
       (e.target.tagName.toLowerCase() === 'use' ||
-        e.target.tagName.toLowerCase() === 'rect') &&
+        e.target.tagName.toLowerCase() === 'rect' ||
+        e.target.tagName.toLowerCase() === 'image') &&
       typeof window !== undefined
     ) {
       const url = e.target.dataset.url
-      window.open(url, '_blank')
+      if (url) {
+        window.open(url, '_blank')
+      }
     }
   }
 

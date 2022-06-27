@@ -1,12 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: 'Website name',
-    titleTemplate: '%s · Website name',
-    description: 'Website site description',
-    url: 'https://www.website-url.com',
-    siteUrl: 'https://www.website-url.com',
-    image: 'https://path-to-logo.com',
-    defaultImage: 'https://path-to-logo.com',
+    title: 'Irbal',
+    titleTemplate: '%s · Irbal',
+    description: 'Para grandes e pequenas obras',
+    url: 'https://vistas.irbal.pt',
+    siteUrl: 'https://vistas.irbal.pt',
+    image:
+      'https://irbal.pt/wp-content/uploads/2022/04/logotipo-para-site-02.png',
+    defaultImage:
+      'https://irbal.pt/wp-content/uploads/2022/04/logotipo-para-site-02.png',
   },
   plugins: [
     'gatsby-plugin-styled-components',

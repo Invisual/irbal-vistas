@@ -1,0 +1,8 @@
+Como inserir uma vista explodida?
+
+- Inserir o produto no ficheiro ‘produtos.js’
+- Na pasta ‘public’ criar uma pasta para esse modelo (ex: ‘lc-130’, meter lá todas as imagens das partes do svg.
+- Criar uma ficheiro dentro de ‘pages’ para esse modelo (nome sem hiphen, ex: lc130)
+- Criar um componente e meter lá o svg. Meter a class ‘vista-g’ no elemento ‘g’ e garantir que passamos {…props} para o svg
+- Meter data-url e data-name nos elementos apropriados
+- Mudar os ‘xlink:href’ para ‘href’ e meter o caminho correto

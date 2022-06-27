@@ -383,4 +383,14 @@ const StyledNav = styled.nav`
       }
     }
   }
+
+  @media screen and (max-width: 400px) {
+    .logo {
+      max-height: 51px;
+    }
+
+    .sidebar {
+      width: 90%;
+    }
+  }
 `

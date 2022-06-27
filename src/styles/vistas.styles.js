@@ -20,16 +20,17 @@ const Main = styled.main`
     svg {
       max-width: 100%;
       height: auto;
+      overflow: visible;
     }
   }
 
-  .vista #ECOMIX_130 {
+  .vista .vista-g {
     g,
+    image,
     rect {
       transform-origin: center center;
       transition: all 0.25s ease;
       position: relative;
-      cursor: pointer;
     }
 
     image,
@@ -37,8 +38,10 @@ const Main = styled.main`
       opacity: 0.5;
     }
 
-    rect[data-url] {
+    rect[data-url],
+    image[data-url] {
       opacity: 1;
+      cursor: pointer;
     }
   }
 
